@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/* Configurar dark mode por clase (no por media query) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-green: #10b981;
+  --color-brand-green-dark: #059669;
+  --color-brand-dark: #0f172a;
+  --color-brand-yellow: #facc15;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

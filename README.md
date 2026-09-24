@@ -39,37 +39,37 @@ Esta landing fue desarrollada como prueba técnica para una empresa de asesorami
 
 ## 📂 Estructura del Proyecto
 
+```text
 energy-save-landing/
-├── public/ # Assets estáticos (favicon, iconos PWA)
+├── public/                    # Assets estáticos (favicon, iconos PWA)
 ├── src/
-│ ├── assets/ # Imágenes del Hero
-│ ├── components/ # Componentes React
-│ │ ├── Navbar.tsx
-│ │ ├── Hero.tsx
-│ │ ├── HeroSlider.tsx
-│ │ ├── Problem.tsx
-│ │ ├── Solution.tsx
-│ │ ├── PWAInstallBanner.tsx
-│ │ ├── Benefits.tsx
-│ │ ├── HowItWorks.tsx
-│ │ ├── ContactForm.tsx
-│ │ ├── Footer.tsx
-│ │ ├── ScrollToTop.tsx
-│ │ └── InstallButton.tsx
-│ ├── contexts/ # Context API (PWA install)
-│ ├── css/ # Estilos globales
-│ ├── hooks/ # Hooks personalizados (useDarkMode)
-│ ├── App.tsx
-│ ├── main.tsx
-│ └── vite-env.d.ts
+│   ├── assets/                # Imágenes del Hero
+│   ├── components/            # Componentes React
+│   │   ├── Navbar.tsx
+│   │   ├── Hero.tsx
+│   │   ├── HeroSlider.tsx
+│   │   ├── Problem.tsx
+│   │   ├── Solution.tsx
+│   │   ├── PWAInstallBanner.tsx
+│   │   ├── Benefits.tsx
+│   │   ├── HowItWorks.tsx
+│   │   ├── ContactForm.tsx
+│   │   ├── Footer.tsx
+│   │   ├── ScrollToTop.tsx
+│   │   └── InstallButton.tsx
+│   ├── contexts/              # Context API (PWA install)
+│   ├── css/                   # Estilos globales
+│   ├── hooks/                 # Hooks personalizados (useDarkMode)
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── vite-env.d.ts
 ├── index.html
 ├── package.json
 ├── tsconfig.json
 ├── vite.config.ts
 ├── README.md
 └── DESIGN.md
-
-
+```
 
 ---
 
@@ -85,60 +85,66 @@ npm install
 
 # 3. Correr en desarrollo
 npm run dev
+```
 
-Abre http://localhost:5173 en el navegador.
+Abre [http://localhost:5173](http://localhost:5173) en el navegador.
 
+### Comandos disponibles
 
-Comandos disponibles
-
-bash
+```bash
 npm run dev      # Servidor de desarrollo
 npm run build    # Build de producción
 npm run preview  # Previsualizar build de producción
+```
 
+---
 
-📱 PWA — Instalación
-Esta landing es una Progressive Web App instalable:
+## 📱 PWA — Instalación
 
-Android/Chrome: Acepta el banner "Instalar" o busca el icono en la barra de direcciones.
+Esta landing es una **Progressive Web App** instalable:
 
-iOS/Safari: Compartir → "Añadir a pantalla de inicio".
-
-Desktop: Icono de instalación en la barra de direcciones.
+- **Android/Chrome:** Acepta el banner "Instalar" o busca el icono en la barra de direcciones.
+- **iOS/Safari:** Compartir → "Añadir a pantalla de inicio".
+- **Desktop:** Icono de instalación en la barra de direcciones.
 
 Una vez instalada:
 
-✅ Se abre como app nativa (sin barra del navegador).
+- ✅ Se abre como app nativa (sin barra del navegador).
+- ✅ Funciona parcialmente offline.
+- ✅ Aparece en pantalla de inicio con su propio icono.
 
-✅ Funciona parcialmente offline.
+---
 
-✅ Aparece en pantalla de inicio con su propio icono.
+## 🎨 Diseño
 
-🎨 Diseño
-Figma (Design System + Wireframes): https://www.figma.com/design/feo7le1Jjc3tAI625Ez3hH/EnergySave-%E2%80%94-Landing?node-id=3-257&t=kRZlBnSD0wrBNHh5-1
+- **Figma (Design System + Wireframes):** https://www.figma.com/design/feo7le1Jjc3tAI625Ez3hH/EnergySave-%E2%80%94-Landing?node-id=3-257&t=kRZlBnSD0wrBNHh5-1
+- **Decisiones de diseño:** Ver [DESIGN.md](./DESIGN.md)
 
-Decisiones de diseño: Ver DESIGN.md
+---
 
-🤖 Uso de IA
-La IA se utilizó como acelerador del desarrollo, no como sustituto del criterio profesional. Se aplicó en:
+## 🤖 Uso de IA
 
-Brainstorming de estructura según el modelo AIDA.
+La IA se utilizó como **acelerador del desarrollo**, no como sustituto del criterio profesional. Se aplicó en:
 
-Variantes de copywriting orientadas a conversión.
+- Brainstorming de estructura según el modelo AIDA.
+- Variantes de copywriting orientadas a conversión.
+- Scaffolding de Tailwind CSS con refinamiento manual posterior.
+- Validación de best practices en landings de conversión.
 
-Scaffolding de Tailwind CSS con refinamiento manual posterior.
+Detalles completos en [DESIGN.md](./DESIGN.md).
 
-Validación de best practices en landings de conversión.
+---
 
-Detalles completos en DESIGN.md.
+## 📄 Licencia
 
-📄 Licencia
 Proyecto de prueba técnica. Todos los datos legales son ficticios.
 
-👨‍💻 Autor
-Héctor Hans Olave Trujillo
+---
+
+## 👨‍💻 Autor
+
+**Héctor Hans Olave Trujillo**  
 Senior FullStack & Mobile Developer
 
-🔗 GitHub: https://github.com/hanchosky
-🔗 LinkedIn: https://www.linkedin.com/in/hector-hans-olave-trujillo-5449506a/
-
+🔗 GitHub: [github.com/hanchosky](https://github.com/hanchosky)  
+🔗 LinkedIn: [linkedin.com/in/hector-hans-olave-trujillo-5449506a](https://www.linkedin.com/in/hector-hans-olave-trujillo-5449506a/)

@@ -23,12 +23,45 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           {/* Botón dark mode */}
           <button
-            onClick={toggle}
-            aria-label="Cambiar tema"
-            className="w-10 h-10 rounded-full flex items-center justify-center text-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
-          >
-            {isDark ? "☀️" : "🌙"}
-          </button>
+          onClick={toggle}
+          aria-label={isDark ? "Cambiar a modo claro" : "Cambiar a modo oscuro"}
+          className="w-10 h-10 rounded-full flex items-center justify-center bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+        >
+          {isDark ? (
+            // Luna (modo oscuro activo)
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="text-slate-700 dark:text-slate-200"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          ) : (
+            // Sol (modo claro activo)
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="text-slate-700 dark:text-slate-200"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+            </svg>
+          )}
+        </button>
 
           <a
             href="#contacto"
